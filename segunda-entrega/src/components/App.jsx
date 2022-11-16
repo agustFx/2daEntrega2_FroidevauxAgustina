@@ -1,25 +1,27 @@
-import './app.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import './app.css'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Navbar from './Navbar/Navbar';
-import Home from './Home/Home';
-import Producto from './Producto/Producto';
-import Carrito from './Carrito/Carrito';
-
-
-function App() {
-  return(
+import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
+import Cart from './Cart/Cart';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
+import PromosContainer from './PromosContainer/PromosContainer';
+const App = () => {
+  
+  return (
     <>
-    <BrowserRouter>
-       <Navbar/>
+      <BrowserRouter>
+        <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/producto/:id' element={<Producto/>}/>
-          <Route path='/carrito' element={<Carrito/>}/>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/product/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/promos/:idCategoria' element={<PromosContainer/>}/>
         </Routes>
-     </BrowserRouter>
-    
+      </BrowserRouter>
+      
     </>
-  )
+   
+  );
 }
 
 export default App;

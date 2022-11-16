@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
-import ItemList from '../ItemList/ItemList.jsx';
+import Promos from '../Promos/Promos.jsx';
 import {consultarBDD} from '../assets/funciones.js'
 import { useParams } from 'react-router-dom';
 
-const ItemListContainer = () => {
+const PromosContainer = () => {
 
     const [productos, setProductos] = useState([]);
     const {category} = useParams()
@@ -14,13 +14,13 @@ const ItemListContainer = () => {
             consultarBDD('../json/productos.json').then(products => {
                 const productsList= products.filter(prod => prod.idCategoria === parseInt(category))
                 console.log(productsList)
-                const cardProductos = ItemList({productsList})
-                setProductos(cardProductos)
+                const cardPromos = Promos({productsList})
+                setProductos(cardPromos)
             })
         } else {
             consultarBDD('./../json/productos.json').then(productsList => {
-                const cardProductos = ItemList({productsList})
-                setProductos(cardProductos)
+                const cardPromos = Promos({productsList})
+                setProductos(cardPromos)
             })
         }
         
@@ -34,4 +34,4 @@ const ItemListContainer = () => {
     );
 }
 
-export default ItemListContainer;
+export default PromosContainer;

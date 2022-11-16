@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "idCategoria": 1, 
         "nombre": "Pizza Extra Cheese",
         "contenido": "Cuatro quesos",
         "precio": 1700,
@@ -10,6 +11,7 @@
 
     {
         "id": 2,
+        "idCategoria": 1,
         "nombre": "Pizza Extra Cheese",
         "contenido": "Cuatro quesos",
         "precio": 1700,
@@ -19,6 +21,7 @@
 
     {
         "id": 3,
+        "idCategoria": 1,
         "nombre": "Pizza Extra Cheese",
         "contenido": "Cuatro quesos",
         "precio": 1700,
@@ -28,6 +31,7 @@
 
     {
         "id": 4,
+        "idCategoria": 1,
         "nombre": "Pizza Extra Cheese",
         "contenido": "Cuatro quesos",
         "precio": 1700,
@@ -37,8 +41,9 @@
 
     {
         "id": 5,
-        "nombre": "Pizza Extra Cheese",
-        "contenido": "Cuatro quesos",
+        "idCategoria": 2,
+        "nombre": "Pizza Vegana",
+        "contenido": "Verduras salteadas",
         "precio": 1700,
         "stock": 28,
         "img": "pizzaink.jpg"
@@ -46,8 +51,9 @@
 
     {
         "id": 6,
-        "nombre": "Pizza Extra Cheese",
-        "contenido": "Cuatro quesos",
+        "idCategoria": 2,
+        "nombre": "Pizza Vegana",
+        "contenido": "Verduras salteadas",
         "precio": 1700,
         "stock": 28,
         "img": "pizzaink.jpg"
@@ -55,8 +61,9 @@
 
     {
         "id": 7,
-        "nombre": "Pizza Extra Cheese",
-        "contenido": "Cuatro quesos",
+        "idCategoria": 2,
+        "nombre": "Pizza Vegana",
+        "contenido": "Verduras salteadas",
         "precio": 1700,
         "stock": 28,
         "img": "pizzaink.jpg"
@@ -64,8 +71,9 @@
 
     {
         "id": 8,
-        "nombre": "Pizza Extra Cheese",
-        "contenido": "Cuatro quesos",
+        "idCategoria": 1,
+        "nombre": "Pizza Vegana",
+        "contenido": "Verduras salteadas",
         "precio": 1700,
         "stock": 28,
         "img": "pizzaink.jpg"

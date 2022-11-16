@@ -14,7 +14,7 @@ const Navbar = () => {
     <Link className='nav-link' to="/">
       <button className='btn btn-secondary'>Home</button>
     </Link>
-    <Link className='nav-link' to="/">
+    <Link className='nav-link' to="/promos">
       <button className='btn btn-secondary'>Promos</button>
     </Link>
 
