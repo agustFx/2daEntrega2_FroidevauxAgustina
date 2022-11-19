@@ -1,34 +1,50 @@
+import { Link } from 'react-router-dom';
+import './dropdown.css'
 
 const Dropdown = () => {
     return (
-            <li className="nav-item dropdown">
-          <a
+      <>
+         <li className="nav-item dropdown">
+          <Link
             className="nav-link dropdown-toggle"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             Menú
-          </a>
+          </Link>
+
           <ul className="dropdown-menu">
-            <li>
-              <a className="dropdown-item" href="#">
+            
+              <Link className="dropdown-item" to="category/1">
+              <li>
                 Pizzas
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
+              </li>
+              </Link>
+
+              <Link className="dropdown-item" to="category/2">
+              <li>
+                Pizzas veganas
+              </li>
+              </Link>
+            
+            
+              <Link className="dropdown-item" to="category/3">
+              <li>
                 Hamburguesas
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
+              </li>
+              </Link>
+            
+            
+              <Link className="dropdown-item" to="category/4">
+              <li>
                  Minutas
-              </a>
-            </li>
+              </li>
+              </Link>
+            
           </ul>
         </li>
+    </>
     );
 }
 

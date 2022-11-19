@@ -4,7 +4,8 @@ import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
-import PromosContainer from './PromosContainer/PromosContainer';
+
+
 const App = () => {
   
   return (
@@ -15,7 +16,7 @@ const App = () => {
           <Route path='/' element={<ItemListContainer/>}/>
           <Route path='/product/:id' element={<ItemDetailContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path='/promos/:idCategoria' element={<PromosContainer/>}/>
+          <Route path='category/:category' element={<ItemListContainer/>} />
         </Routes>
       </BrowserRouter>
       

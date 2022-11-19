@@ -18,7 +18,7 @@ const ItemListContainer = () => {
                 setProductos(cardProductos)
             })
         } else {
-            consultarBDD('./../json/productos.json').then(productsList => {
+            consultarBDD('./json/productos.json').then(productsList => {
                 const cardProductos = ItemList({productsList})
                 setProductos(cardProductos)
             })

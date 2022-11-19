@@ -4,7 +4,7 @@ const Item = ({prod}) => {
     return (
         
 <div className="card cardProducto" key={prod.id}>
-<img src={`./img/${prod.img}`} className="card-img-top" alt="img" />
+<img src={`../img/${prod.img}`} className="card-img-top" alt="img" />
 <div className="card-body">
 <h5 className="card-title">{prod.nombre}</h5>
 <p className="card-text">Contenido: {prod.contenido}</p>

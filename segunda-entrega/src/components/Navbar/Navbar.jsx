@@ -14,13 +14,12 @@ const Navbar = () => {
     <Link className='nav-link' to="/">
       <button className='btn btn-secondary'>Home</button>
     </Link>
-    <Link className='nav-link' to="/promos">
+    <Link className='nav-link' to={'category/5'}>
       <button className='btn btn-secondary'>Promos</button>
     </Link>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <Secciones/>
         <Dropdown/>
       </ul>
       <CartWidge/>

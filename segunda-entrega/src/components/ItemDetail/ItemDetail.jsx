@@ -1,6 +1,7 @@
 import React from 'react';
+import ItemCount from '../ItemCount/ItemCount'
 
-const ItemDetail = (producto) => {
+const ItemDetail = ({producto}) => {
     return (
         <>
             <div className='row g-0'>
@@ -12,6 +13,7 @@ const ItemDetail = (producto) => {
                     <h5 className='card-title'>{producto.nombre}</h5>
                     <p className='card-text'>Contenido: {producto.contenido}</p>
                     <p className='card-text'>Precio: ${producto.precio}</p>
+                    <ItemCount/> 
                     <button className="btn btn-dark">Agregar al carrito</button>
                 </div>
             </div>
